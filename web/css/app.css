@@ -7,12 +7,8 @@ body {
 }
 
 .signup-panel {
-  border-radius: 5px;
-  border: 1px solid #ccc;
   padding: 15px;
   margin-top: 20%;
-  /*background-color: #f9f9f9;*/
-  /*background-color: #fff;*/
   background: rgb(245,245,245); /* Old browsers */
   background: -moz-linear-gradient(top,  rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,245,245,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
@@ -21,7 +17,9 @@ body {
   background: -ms-linear-gradient(top,  rgba(245,245,245,1) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
   background: linear-gradient(to bottom,  rgba(245,245,245,1) 0%,rgba(255,255,255,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-
+  -webkit-box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .signup-panel i {
@@ -62,63 +60,3 @@ body {
 .signup-panel #already a:hover {
   color: #fac564;
 }
-
-.circlenumber {
-  /*background-color: #fff;*/
-  /*border-radius: 50%;*/
-  /*border: 1px solid #0b4f69;*/
-  position: relative;
-}
-.circlenumber h3 {
-  line-height: 1px;
-  color: #0b4f69;
-  position: relative;
-  text-align: center;
-  font-weight: normal;
-}
-
-@media only screen and (min-width: 40em) {
-  .step-by-step-style-two .circlenumber {
-    width: 80px;
-    height: 80px;
-    left: -12px;
-    margin: 30px auto 15px auto;
-  }
-  .step-by-step-style-two .circlenumber h3 {
-    padding-top: 35px;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 0) and (max-width: 40em) {
-  .step-by-step-style-two .path-item {
-    padding-left: 55px;
-    position: relative;
-  }
-  .step-by-step-style-two .path-item .circlenumber {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    margin-top: 6px;
-    left: 0;
-  }
-  .step-by-step-style-two .path-item .circlenumber h3 {
-    padding-top: 15px;
-    font-size: 16px;
-  }
-}
-
-.circlenumber i {
-  font-size: 40px;
-  /*line-height: -6px0px;*/
-}
-
-#white {
-  background-color: #fff;
-  height: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 10%;
-}
-
-
