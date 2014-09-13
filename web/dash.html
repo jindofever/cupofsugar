@@ -19,7 +19,7 @@
 
 
         <div id="gimp">
-          Find a <span id="amount">cup</span> of <span id="thing">sugar</span> today!
+          Find a <span id="amount" >cup</span> of <span id="thing">sugar</span> today
         </div>
         <div id="search">
           <div class="row collapse">
@@ -46,6 +46,22 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+
+      $(document).ready(function (){
+
+        setInterval("javascript function", milliseconds);
+
+        function amountSwitch() {
+          $("#amount")
+            .on('click', function() {
+                pokecount = 0;
+                $("#pokeimg").attr("src", "img/projects/pokebomb/one.jpg");
+            });
+        };
+
+
+      });
+
     </script>
   </body>
 </html>
