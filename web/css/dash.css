@@ -1,7 +1,21 @@
 body {
-  background-image: url(../img/food.png);
+  /*background-image: url(../img/food.png);*/
 }
 
-#logo {
-  
+
+#id {
+  padding-left: 100px;
+}
+
+#search .button {
+  background-color: #f1882b;
+}
+
+#search .button:hover {
+  background-color: #fac564;
+}
+
+#gimp {
+  font-size: 40px;
+  /*font-family:;*/
 }
