@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         self.window!.rootViewController = LoginViewController()
         self.window!.makeKeyAndVisible()
         
-        //initLocationManager()
+        initLocationManager()
         
         Parse.setApplicationId("SlLRqtDihroj3xR6YZYSMibXCBftVQlty4Aq96nP", clientKey: "eXC4QeKDQCA4YyM1pGxibVOo9KAQDqIoUsFzNP0T")
 

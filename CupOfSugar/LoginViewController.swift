@@ -21,6 +21,8 @@ class LoginViewController: UIViewController, LoginViewDelegate {
     
     func login() {
         println("logging in!")
+        
+        self.presentViewController(ItemSearchViewController(), animated: true, completion: nil)
     }
     
     func logout() {
