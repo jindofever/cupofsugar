@@ -30,7 +30,7 @@ body {
 }
 
 .item-panel .header {
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
   margin-left: 0;
   font-weight: bold;
@@ -66,13 +66,18 @@ body {
 
 label {
   padding-left: 10px;
-  font-size: 37px;
+  font-size: 33px;
 }
 
 .double {
-  zoom:3;
+  zoom:2.5;
   margin-bottom:2px;
 }
 
+.block {
+  margin-left: 8%;
+  margin-right: auto;
+  width: 45em;
+}
 
 
