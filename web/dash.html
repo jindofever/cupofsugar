@@ -10,57 +10,206 @@
 
     <script src="js/vendor/modernizr.js"></script>
   </head>
+
+
   <body>
+
+    <div id="content"> 
     
     <div class="row">
-      <div class="small-0 large-2 columns">.</div>
       
-      <div class="small-12 large-8 columns">
+      <div class="small-12 large-12 columns">
 
+      
 
-        <div id="gimp">
-          Find a <span id="amount" >cup</span> of <span id="thing">sugar</span> today
-        </div>
+        <nav class="row" id="navbar">
+          <div class="large-12 columns">
+            <ul class="button-group even-2">
+              <li><a class="button" id="find">FIND</a></li>
+              <li><a class="button" id="post">POST</a></li>
+            </ul>
+          </div>
+        </nav>    
+
+        <div class="small-1 columns">.</div>
+
+        <div class="small-10 columns">
+
         <div id="search">
           <div class="row collapse">
             <div class="small-10 columns">
-
+              <i class="fi-magnifying-glass"></i>
               <input type="text" id="put" placeholder="Find what you're looking for! e.g. Sugar">
             </div>
             <div class="small-2 columns">
-              <a href="" class="button postfix">Find</a>
+              <a class="button postfix" id="findb">Find</a>
             </div>
           </div>
         </div>
 
 
-        
+        <div id="results">
+          <div class="row collapse">
+            <div class="small-10 columns">
+              <i class="fi-magnifying-glass"></i>
+              <input type="text" id="put2" placeholder="What do you need?">
+            </div>
+            <div class="small-2 columns">
+              <a href="" class="button postfix">Find</a>
+            </div>
+          </div>
+
+          <div class="row collapse pers">
+            <div class="small-2 columns">
+              <img src="img/user/kashish.jpg">
+            </div>
+            <div class="small-8 columns">
+              <div class="name">
+                Kashish Hora
+              </div>
+              <div class="other">
+                He has: <span class="chosen">sugar</span> &#8226; butter &#8226; hammer &#8226; cumin &#8226; masala
+              </div>
+            </div>
+            <div class="small-2 columns">
+              <div class="distance close">
+                0.1 miles
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row collapse pers">
+            <div class="small-2 columns">
+              <img src="img/user/emily.jpg">
+            </div>
+            <div class="small-8 columns">
+              <div class="name">
+                Emily Huber
+              </div>
+              <div class="other">
+                She has: <span class="chosen">sugar</span> &#8226; blender &#8226; flour &#8226; oregano &#8226; food dye &#8226; mint
+              </div>
+            </div>
+            <div class="small-2 columns">
+              <div class="distance close">
+                0.3 miles
+              </div>
+            </div>
+          </div>
+
+          <div class="row collapse pers">
+            <div class="small-2 columns">
+              <img src="img/user/charles.jpg">
+            </div>
+            <div class="small-8 columns">
+              <div class="name">
+                Charles Du
+              </div>
+              <div class="other">
+                He has: <span class="chosen">sugar</span>
+              </div>
+            </div>
+            <div class="small-2 columns">
+              <div class="distance">
+                1.2 miles
+              </div>
+            </div>
+          </div>
+
+          <div class="row collapse pers">
+            <div class="small-2 columns">
+              <img src="img/user/ben.jpg">
+            </div>
+            <div class="small-8 columns">
+              <div class="name">
+                Ben Hsu
+              </div>
+              <div class="other">
+                He has: <span class="chosen">sugar</span> &#8226; tumeric &#8226; wood screws &#8226; bike pump
+              </div>
+            </div>
+            <div class="small-2 columns">
+              <div class="distance">
+                1.3 miles
+              </div>
+            </div>
+          </div>
+
+          <div class="row collapse pers">
+            <div class="small-2 columns">
+              <img src="img/user/cathy.jpg">
+            </div>
+            <div class="small-8 columns">
+              <div class="name">
+                Cathy Chen
+              </div>
+              <div class="other">
+                She has: <span class="chosen">sugar</span> &#8226; orange juice &#8226; hammer &#8226; power drill
+              </div>
+            </div>
+            <div class="small-2 columns">
+              <div class="distance">
+                1.3 miles
+              </div>
+            </div>
+          </div>
+
+          <div class="row collapse pers">
+            <div class="small-2 columns">
+              <img src="img/user/julia.jpg">
+            </div>
+            <div class="small-8 columns">
+              <div class="name">
+                Julia Hewitt
+              </div>
+              <div class="other">
+                He has: <span class="chosen">sugar</span> &#8226; cornstarch &#8226; screwdriver
+              </div>
+            </div>
+            <div class="small-2 columns">
+              <div class="distance">
+                1.9 miles
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+<!--
+  ********************************************************************** -->
+
+
+        <div id="add">
+
+          <div class="row collapse">
+            <div class="small-2 columns">
+              <span class="prefix">Item</span>
+            </div>
+            <div class="small-10 columns">
+              <input type="text" id="item" placeholder="What do you have to spare?">
+            </div>
+          </div>
+          <a href="" class="button">Share!</a>
+        </div>
+      </div>
+
+      <div class="small-1 columns">.</div>
+
+      </div>
+              
 
 
       </div>
       
-      <div class="small-0 large-2 columns">.</div>
     </div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/main.js"></script>
     <script>
       $(document).foundation();
-
-      $(document).ready(function (){
-
-        setInterval("javascript function", milliseconds);
-
-        function amountSwitch() {
-          $("#amount")
-            .on('click', function() {
-                pokecount = 0;
-                $("#pokeimg").attr("src", "img/projects/pokebomb/one.jpg");
-            });
-        };
-
-
-      });
 
     </script>
   </body>
