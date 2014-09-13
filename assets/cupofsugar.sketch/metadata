@@ -9,9 +9,13 @@
 	<key>commit</key>
 	<string>b2079fe10151ad0eef6cc553b7369ec78d67b9b5</string>
 	<key>fonts</key>
-	<array/>
+	<array>
+		<string>GeosansLight</string>
+		<string>BebasNeueLight</string>
+		<string>BebasNeueBold</string>
+	</array>
 	<key>length</key>
-	<integer>34776</integer>
+	<integer>1553439</integer>
 	<key>version</key>
 	<integer>37</integer>
 </dict>
