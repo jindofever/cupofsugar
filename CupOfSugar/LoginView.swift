@@ -9,7 +9,7 @@
 import UIKit
 
 protocol LoginViewDelegate {
-    func login()
+    func login(username: String?, password: String?)
     func logout()
 }
 
@@ -97,7 +97,7 @@ class LoginView: UIView, UITextFieldDelegate {
     }
 
     func login() {
-        self.delegate?.login()
+        self.delegate?.login(usernameTextField?.text, password: passwordTextField?.text)
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -110,7 +110,7 @@ class LoginView: UIView, UITextFieldDelegate {
         }
         else if textField == passwordTextField {
             textField.resignFirstResponder()
-            self.delegate?.login()
+            self.delegate?.login(usernameTextField?.text, password: passwordTextField?.text)
         }
         return false
     }

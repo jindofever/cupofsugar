@@ -44,7 +44,7 @@ class ItemSearchView: UIView, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(textField: UITextField!) -> Bool {
-        self.delegate?.search("butter")
+        self.delegate?.search("Sugar")
         textField.resignFirstResponder()
         return true
     }

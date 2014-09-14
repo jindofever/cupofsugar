@@ -13,9 +13,11 @@
 		<string>GeosansLight</string>
 		<string>BebasNeueLight</string>
 		<string>BebasNeueBold</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue-Medium</string>
 	</array>
 	<key>length</key>
-	<integer>2590734</integer>
+	<integer>2898317</integer>
 	<key>version</key>
 	<integer>37</integer>
 </dict>

@@ -12,8 +12,13 @@ extension AppDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         locationManager.distanceFilter = 25
-        locationManager.requestWhenInUseAuthorization()
-        
+        let version: NSString = UIDevice.currentDevice().systemVersion
+        if (version.floatValue >= 8.0) {
+            locationManager.requestWhenInUseAuthorization()
+        }
+        else {
+            locationManager.startUpdatingLocation()
+        }
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
