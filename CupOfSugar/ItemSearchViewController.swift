@@ -29,16 +29,19 @@ class ItemSearchViewController: UIViewController, ItemSearchViewDelegate, Person
         
         let cathyView = PersonView(frame: CGRect(x: 15, y: 120, width: 290, height: 60), firstName: "Cathy", photo: UIImage(), distance: "0.3")
         cathyView.delegate = self
+        cathyView.alpha = 0
         
         let charlesView = PersonView(frame: CGRect(x: 15, y: 200, width: 290, height: 60), firstName: "Charles", photo: UIImage(), distance: "0.5")
         charlesView.delegate = self
-        
-        let kashishView = PersonView(frame: CGRect(x: 15, y: 280, width: 290, height: 60), firstName: "Kashish", photo: UIImage(), distance: "1.3")
-        kashishView.delegate = self
+        charlesView.alpha = 0
         
         self.view.addSubview(cathyView)
         self.view.addSubview(charlesView)
-        self.view.addSubview(kashishView)
+        
+        UIView.animateWithDuration(1, animations: { () -> Void in
+            cathyView.alpha = 1
+            charlesView.alpha = 1
+        })
     }
     
     func goToPerson(personFirstName: String) {

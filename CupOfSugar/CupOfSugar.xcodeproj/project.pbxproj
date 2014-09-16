@@ -13,6 +13,7 @@
 		A43C5EF519C561F800DFD40E /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C5EF419C561F800DFD40E /* ContactView.swift */; };
 		A440E07E19C5880900E7E49D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A440E07D19C5880900E7E49D /* MessageUI.framework */; };
 		A440E08019C5929B00E7E49D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A440E07F19C5929B00E7E49D /* MapKit.framework */; };
+		A440E08219C59C3400E7E49D /* LocalityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440E08119C59C3400E7E49D /* LocalityView.swift */; };
 		A460B06219C4B7550006BB60 /* ItemSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460B06119C4B7550006BB60 /* ItemSearchViewController.swift */; };
 		A460B06419C4B7610006BB60 /* ItemSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460B06319C4B7610006BB60 /* ItemSearchView.swift */; };
 		A466E87E19C3FFB5002F8601 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A466E87D19C3FFB5002F8601 /* LoginViewController.swift */; };
@@ -62,6 +63,7 @@
 		A43C5EF419C561F800DFD40E /* ContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		A440E07D19C5880900E7E49D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		A440E07F19C5929B00E7E49D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A440E08119C59C3400E7E49D /* LocalityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalityView.swift; sourceTree = "<group>"; };
 		A460B06119C4B7550006BB60 /* ItemSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSearchViewController.swift; sourceTree = "<group>"; };
 		A460B06319C4B7610006BB60 /* ItemSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSearchView.swift; sourceTree = "<group>"; };
 		A466E87D19C3FFB5002F8601 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				A466E87D19C3FFB5002F8601 /* LoginViewController.swift */,
 				A466E87F19C40075002F8601 /* LoginView.swift */,
 				A460B06119C4B7550006BB60 /* ItemSearchViewController.swift */,
+				A440E08119C59C3400E7E49D /* LocalityView.swift */,
 				A43C5EF019C4F0BC00DFD40E /* RequestViewController.swift */,
 				A43C5EEE19C4EB0D00DFD40E /* RequestView.swift */,
 				A4BE9DE319C4BBDE004ED368 /* PersonView.swift */,
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A43C5EEF19C4EB0D00DFD40E /* RequestView.swift in Sources */,
+				A440E08219C59C3400E7E49D /* LocalityView.swift in Sources */,
 				A43C5EF519C561F800DFD40E /* ContactView.swift in Sources */,
 				A466E87E19C3FFB5002F8601 /* LoginViewController.swift in Sources */,
 				A460B06419C4B7610006BB60 /* ItemSearchView.swift in Sources */,

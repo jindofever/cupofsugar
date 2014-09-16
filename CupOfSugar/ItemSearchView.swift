@@ -33,6 +33,7 @@ class ItemSearchView: UIView, UITextFieldDelegate {
         searchTextField.returnKeyType = .Search
         searchTextField.autocorrectionType = .No
         searchTextField.delegate = self
+        searchTextField.becomeFirstResponder()
         
         self.addSubview(background)
         self.addSubview(searchField)

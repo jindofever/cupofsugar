@@ -30,6 +30,9 @@ class PersonView: UIView {
         
         self.layer.mask = maskLayer
         
+        let personImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
+        personImage.image = UIImage(named: firstName.lowercaseString)
+        
         let distanceLabel = UILabel(frame: CGRect(x: 70, y: 5, width: 10, height: 10))
         distanceLabel.font = UIFont(name: "GeosansLight", size: 15)
         distanceLabel.text = distance + " miles away"
@@ -50,6 +53,7 @@ class PersonView: UIView {
         selectButton.setAttributedTitle(selectTitle, forState: .Normal)
         selectButton.addTarget(self, action: Selector("goToPerson"), forControlEvents: .TouchUpInside)
 
+        self.addSubview(personImage)
         self.addSubview(distanceLabel)
         self.addSubview(nameLabel)
         self.addSubview(selectButton)
